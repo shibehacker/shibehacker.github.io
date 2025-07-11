@@ -47,8 +47,13 @@
 						document.addEventListener( 'touchmove', onTouchEvent, false );
 		
 					}, false );
+
+					const imageLibrary = [
+						"tomoe1.png",
+						"tomoe2.png",
+					];
 		
-					image.src = "tomoe2.png";
+					image.src = imageLibrary[Math.floor(Math.random() * imageLibrary.length)];
 		
 					function onMouseEvent( event ) {
 		
